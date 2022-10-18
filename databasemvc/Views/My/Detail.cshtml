@@ -1,0 +1,43 @@
+﻿@model databasemvc.Models.detail
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>result</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Mydetail", "My"))
+        {
+            <h1>Student Form</h1>
+            <label>Student RollNo</label>
+            @Html.TextBoxFor(a => a.RollNo)
+            <br /><br />
+            <label>Student Name</label>
+            @Html.TextBoxFor(a => a.StudentName)
+            <br /><br />
+            <label>Student Age</label>
+            @Html.TextBoxFor(a => a.StudentAge)
+            <br />
+            <br />
+            <label>Student PhoneNo</label>
+            @Html.TextBoxFor(a => a.PhoneNo)
+            <br />
+            <br />
+            <label>Student Location</label>
+            @Html.TextBoxFor(a => a.StudentLocation)
+            <br />
+            <br />
+            <button>Save</button>
+        }
+    </div>
+</body>
+</html>
+
+
+
